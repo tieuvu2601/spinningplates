@@ -1,0 +1,22 @@
+git reset --mixed origin/master
+git add .
+git commit -m "This is a new commit for what I originally planned to be amended"
+git push origin master
+
+
+
+
+git remote set-url origin https://quockhanhqb011:ThienDuong0209@github.com/user/spinning.git
+
+https://quockhanhqb011:ThienDuong0209@github.com/user/repo.git
+
+
+
+https://github.com/quockhanhqb011/spinning.git
+
+
+Update Git config file to :
+
+https://youruser:password@github.com/user/repo.git
+ex:
+https://quockhanhqb011:ThienDuong0209@github.com/user/spinning.git
