@@ -86,12 +86,10 @@ function Timeline(timeline, fps, id) {
             }
 
             self._arrlayerObj[i].hideElement = function (ref) {
-                console.dir("hide element please");
                 $('#' + ref.element).css('display', 'none');
             }
 
             self._arrlayerObj[i].showElement = function (ref) {
-                console.dir("Show element please");
                 $('#' + ref.element).css('display', 'block');
             }
         }

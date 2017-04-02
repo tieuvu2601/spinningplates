@@ -15,12 +15,198 @@ var backgroundScene = {
                 {
                     "layer_id": "background",
                     "keyframes": [
-                        {"frameNum": 1, "css": [{"top": 0, "left": 0, "opacity": 1}], "tween": false},
-                        {"frameNum": 2, "css": [{"top": 0, "left": 0, "opacity": 1}], "tween": false}
+                        {"frameNum": 1, "css": [{"opacity": 1}], "tween": false},
+                        {"frameNum": 2, "css": [{"opacity": 1}], "tween": false}
+                    ]
+                }, {
+                    "layer_id": "joker",
+                    "keyframes": [
+                        {"frameNum": 1, "css": [{opacity: 1}], "tween": false},
+                        {"frameNum": 2, "css": [{opacity: 1}], "tween": false}
+                    ]
+                },
+
+
+                {
+                    "layer_id": "left_leg",
+                    "keyframes": [
+                        {"frameNum": 1, "css": [{"opacity": 1}], "tween": false},
+                        {"frameNum": 2, "css": [{"opacity": 1}], "tween": false}
+                    ]
+                }, {
+                    "layer_id": "left_foot",
+                    "keyframes": [
+                        {"frameNum": 1, "css": [{"opacity": 1}], "tween": false},
+                        {"frameNum": 2, "css": [{"opacity": 1}], "tween": false}
+                    ]
+                }, {
+                    "layer_id": "line_1",
+                    "keyframes": [
+                        {"frameNum": 1, "css": [{"opacity": 1}], "tween": false},
+                        {"frameNum": 2, "css": [{"opacity": 1}], "tween": false}
+                    ]
+                }, {
+                    "layer_id": "line_1_dished",
+                    "keyframes": [
+                        {"frameNum": 1, "css": [{"opacity": 1}], "tween": false},
+                        {"frameNum": 2, "css": [{"opacity": 1}], "tween": false}
+                    ]
+                },
+
+                {
+                    "layer_id": "right_leg",
+                    "keyframes": [
+                        {"frameNum": 1, "css": [{"opacity": 1}], "tween": false},
+                        {"frameNum": 2, "css": [{"opacity": 1}], "tween": false}
+                    ]
+                }, {
+                    "layer_id": "right_foot",
+                    "keyframes": [
+                        {"frameNum": 1, "css": [{"opacity": 1}], "tween": false},
+                        {"frameNum": 2, "css": [{"opacity": 1}], "tween": false}
+                    ]
+                },
+
+
+                {
+                    "layer_id": "forearm_left",
+                    "keyframes": [
+                        {"frameNum": 1, "css": [{"opacity": 1}], "tween": false},
+                        {"frameNum": 2, "css": [{"opacity": 1}], "tween": false}
+                    ]
+                },  {
+                    "layer_id": "upper_arm_left",
+                    "keyframes": [
+                        {"frameNum": 1, "css": [{"opacity": 1}], "tween": false},
+                        {"frameNum": 2, "css": [{"opacity": 1}], "tween": false}
+                    ]
+                }, {
+                    "layer_id": "hand_close_left",
+                    "keyframes": [
+                        {"frameNum": 1, "css": [{"opacity": 1}], "tween": false},
+                        {"frameNum": 2, "css": [{"opacity": 1}], "tween": false}
+                    ]
+                },
+
+                {
+                    "layer_id": "line_2",
+                    "keyframes": [
+                        {"frameNum": 1, "css": [{"opacity": 1}], "tween": false},
+                        {"frameNum": 2, "css": [{"opacity": 1}], "tween": false}
+                    ]
+                }, {
+                    "layer_id": "line_2_dished",
+                    "keyframes": [
+                        {"frameNum": 1, "css": [{"opacity": 1}], "tween": false},
+                        {"frameNum": 2, "css": [{"opacity": 1}], "tween": false}
+                    ]
+                },
+
+                {
+                    "layer_id": "line_3",
+                    "keyframes": [
+                        {"frameNum": 1, "css": [{"opacity": 1}], "tween": false},
+                        {"frameNum": 2, "css": [{"opacity": 1}], "tween": false}
+                    ]
+                }, {
+                    "layer_id": "line_3_dished",
+                    "keyframes": [
+                        {"frameNum": 1, "css": [{"opacity": 1}], "tween": false},
+                        {"frameNum": 2, "css": [{"opacity": 1}], "tween": false}
+                    ]
+                },
+
+
+
+
+
+                {
+                    "layer_id": "forearm_right",
+                    "keyframes": [
+                        {"frameNum": 1, "css": [{"opacity": 1}], "tween": false},
+                        {"frameNum": 2, "css": [{"opacity": 1}], "tween": false}
+                    ]
+                }, {
+                    "layer_id": "upper_arm_right",
+                    "keyframes": [
+                        {"frameNum": 1, "css": [{"opacity": 1}], "tween": false},
+                        {"frameNum": 2, "css": [{"opacity": 1}], "tween": false}
+                    ]
+                }, {
+                    "layer_id": "hand_close_right",
+                    "keyframes": [
+                        {"frameNum": 1, "css": [{"opacity": 1}], "tween": false},
+                        {"frameNum": 2, "css": [{"opacity": 1}], "tween": false}
+                    ]
+                }, {
+                    "layer_id": "line_5",
+                    "keyframes": [
+                        {"frameNum": 1, "css": [{"opacity": 1}], "tween": false},
+                        {"frameNum": 2, "css": [{"opacity": 1}], "tween": false}
+                    ]
+                }, {
+                    "layer_id": "line_5_dished",
+                    "keyframes": [
+                        {"frameNum": 1, "css": [{"opacity": 1}], "tween": false},
+                        {"frameNum": 2, "css": [{"opacity": 1}], "tween": false}
+                    ]
+                },  {
+                    "layer_id": "line_6",
+                    "keyframes": [
+                        {"frameNum": 1, "css": [{"opacity": 1}], "tween": false},
+                        {"frameNum": 2, "css": [{"opacity": 1}], "tween": false}
+                    ]
+                }, {
+                    "layer_id": "line_6_dished",
+                    "keyframes": [
+                        {"frameNum": 1, "css": [{"opacity": 1}], "tween": false},
+                        {"frameNum": 2, "css": [{"opacity": 1}], "tween": false}
+                    ]
+                },
+
+
+
+
+
+
+
+                {
+                    "layer_id": "joker_head_1",
+                    "keyframes": [
+                        {"frameNum": 1, "css": [{"opacity": 1}], "tween": false},
+                        {"frameNum": 2, "css": [{"opacity": 1}], "tween": false}
+                    ]
+                }, {
+                    "layer_id": "joker_chest",
+                    "keyframes": [
+                        {"frameNum": 1, "css": [{"opacity": 1}], "tween": false},
+                        {"frameNum": 2, "css": [{"opacity": 1}], "tween": false}
+                    ]
+                },  {
+                    "layer_id": "joker_blow",
+                    "keyframes": [
+                        {"frameNum": 1, "css": [{"opacity": 1}], "tween": false},
+                        {"frameNum": 2, "css": [{"opacity": 1}], "tween": false}
+                    ]
+                }, {
+                    "layer_id": "joker_waist",
+                    "keyframes": [
+                        {"frameNum": 1, "css": [{"opacity": 1}], "tween": false},
+                        {"frameNum": 2, "css": [{"opacity": 1}], "tween": false}
+                    ]
+                },  {
+                    "layer_id": "line_4",
+                    "keyframes": [
+                        {"frameNum": 1, "css": [{"opacity": 1}], "tween": false},
+                        {"frameNum": 2, "css": [{"opacity": 1}], "tween": false}
+                    ]
+                },  {
+                    "layer_id": "line_4_dished",
+                    "keyframes": [
+                        {"frameNum": 1, "css": [{"opacity": 1}], "tween": false},
+                        {"frameNum": 2, "css": [{"opacity": 1}], "tween": false}
                     ]
                 }
-                // beginning
-
             ]
         }
     ]

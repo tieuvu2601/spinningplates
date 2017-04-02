@@ -10,6 +10,9 @@ function AnimController(timeline) {
         tm.onstateChange = function () {
             if (this.action == "stop") {
 
+            } else if (this.action == "stopAnimationForDebug") {
+                console.dir("Stop !!!!");
+                self.stopAll();
             } else if (this.action == "loop") {
                 this.gotoAndPlay(1);
             } else if (this.action == "ownLoop"){
