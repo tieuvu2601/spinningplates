@@ -6,10 +6,10 @@ var backgroundScene = {
     'stackTimelineLayer' : [
         {
             "fps" :24,
-            "totalFrames": 24 * 20,  // 20 second
+            "totalFrames": 24 * 10,  // 20 second
             "id": "background",
-            "audio": [{'src': [{'file': "audio/circus_music.mp3", type: "audio/mp3"}], 'startFrameNum': 1}],
-            "action": [{"keyframes": [{"frameNum": 24 * 30 - 10, "action": "loop"}]}],
+//            "audio": [{'src': [{'file': "audio/circus_music.mp3", type: "audio/mp3"}], 'startFrameNum': 1}],
+            "action": [{"keyframes": [{"frameNum": 24 * 10 - 10, "action": "loop"}]}],
             "layers":[
                 // static frame or need show when begin
                 {
