@@ -175,6 +175,11 @@ div[id^="line_group_"] {
     transform: rotate(0deg);
 }
 
+#line_group_2_falling_center_p {
+    top: 72px;
+    left: 126px;
+}
+
 
 
 

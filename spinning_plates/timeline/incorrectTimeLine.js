@@ -963,43 +963,33 @@ var incorrectScene = {
             "audio": [ {'src': [{'file': "audio/aww.mp3", type: "audio/mp3"}],       delayTime: 1} ],
             "layers":[
                 /*
-                 * 1 + 4 : repeat current step
-                 * 1 + 12 : Prepare to Jump (move to right) and lower right leg)
+                 * 1 : repeat current step
+                 * 1 + 8 : Prepare to Jump (move to right) and lower right leg)
 
                  * */
 
                 {
                     "layer_id": "joker_body_center_p",
                     "keyframes": [
-                        {"frameNum": 1, "css": [{top: 152, left: 133, rotate: 13}], "tween": true},
-                        {"frameNum": 1 + 3, "css": [{top: 149, left: 127, rotate: 9}], "tween": true},
-                        {"frameNum": 1 + 4, "css": [{top: 148, left: 128, rotate: 6}], "tween": true},
-                        {"frameNum": 1 + 12, "css": [{top: 150, left: 127, rotate: 3}], "tween": true},
-                        {"frameNum": 1 + 16, "css": [{top: 147, left: 126, rotate: 5}], "tween": true},
-                        {"frameNum": 1 + 20, "css": [{top: 148, left: 124, rotate: 8}], "tween": true},
+                        {"frameNum": 1, "css": [{top: 147, left: 126, rotate: 5}], "tween": true},
+                        {"frameNum": 1 + 8, "css": [{top: 168, left: 136, rotate: 34}], "tween": true}
 
                     ]
                 }, {
                     "layer_id": "joker_head_center_p",
                     "keyframes": [
-                        {"frameNum": 1, "css": [{rotate: 7}], "tween": true},
-                        {"frameNum": 1 + 4, "css": [{rotate: -15}], "tween": true},
-                        {"frameNum": 1 + 12, "css": [{rotate: -54}], "tween": true},
-                        {"frameNum": 1 + 16, "css": [{rotate: -40}], "tween": true},
-                        {"frameNum": 1 + 20, "css": [{rotate: -54}], "tween": true},
-                        {"frameNum": 1 + 24, "css": [{rotate: -40}], "tween": true, action: "goToFrame", goToFrame: 1 + 16}
+                        {"frameNum": 1, "css": [{rotate: -40}], "tween": true},
+                        {"frameNum": 1 + 8, "css": [{rotate: 36}], "tween": true}
                     ]
                 }, {
                     "layer_id": "joker_head_2",
                     "keyframes": [
-                        {"frameNum": 1, "css": [{opacity: 1}], "tween": false},
-                        {"frameNum": 1 + 12, "css": [{opacity: 0}], "tween": false}
+                         {"frameNum": 1, "css": [{opacity: 0}], "tween": false}
                     ]
                 }, {
                     "layer_id": "joker_head_3",
                     "keyframes": [
-                        {"frameNum": 1, "css": [{opacity: 0}], "tween": false},
-                        {"frameNum": 1 + 12, "css": [{opacity: 1}], "tween": false, hideElement: "joker_head_2"}
+                        {"frameNum": 1, "css": [{opacity: 1}], "tween": false, hideElement: "joker_head_2"}
                     ]
                 },
 
@@ -1008,8 +998,7 @@ var incorrectScene = {
                 {
                     "layer_id": "joker_waist",
                     "keyframes": [
-                        {"frameNum": 1, "css": [{top: -20, left: -29}], "tween": true},
-                        {"frameNum": 1 + 4, "css": [{top: -20, left: -29}], "tween": true}
+                        {"frameNum": 1, "css": [{top: -20, left: -29}], "tween": true}
                     ]
                 },
 
@@ -1019,54 +1008,40 @@ var incorrectScene = {
 
                 // disk 6 falling div#
                 {
-                    "layer_id": "line_group_6_falling_center_p",
+                    "layer_id": "line_group_2_falling_center_p",
                     "keyframes": [
-                        {"frameNum": 1, "css": [{top: 68, left: 215, rotate: 0}], "tween": false},
-                        {"frameNum": 1 + 3, "css": [{top: 38, left: 210, rotate: 0}], "tween": false},
-                        {"frameNum": 1 + 4, "css": [{top: 68, left: 215, rotate: 1}], "tween": false}
+                        {"frameNum": 1, "css": [{top: 74, left: 128, rotate: 0}], "tween": false},
+                        {"frameNum": 1 + 8, "css": [{top: 74, left: 128, rotate: 0}], "tween": false},
+
                     ]
                 }, {
-                    "layer_id": "line_6",
+                    "layer_id": "line_2",
                     "keyframes": [
-                        {"frameNum": 1,     "css": [{opacity: 1}], "tween": false},
-                        {"frameNum": 1 + 3, "css": [{opacity: 0}], "tween": false}
+                        {"frameNum": 1, "css": [{opacity: 1}], "tween": false},
+                        {"frameNum": 1 + 8, "css": [{opacity: 0}], "tween": false, hideElement: "line_2"}
                     ]
                 }, {
-                    "layer_id": "line_6_dished",
+                    "layer_id": "line_2_dished",
                     "keyframes": [
-                        {"frameNum": 1,     "css": [{opacity: 1}], "tween": false},
-                        {"frameNum": 1 + 3, "css": [{opacity: 0}], "tween": false}
+                        {"frameNum": 1, "css": [{opacity: 1}], "tween": false},
+                        {"frameNum": 1 + 8, "css": [{opacity: 0}], "tween": false, hideElement: "line_2_dished"}
                     ]
                 },
 
                 //
                 {
-                    "layer_id": "line_6_falling",
+                    "layer_id": "line_2_falling",
                     "keyframes": [
-                        {"frameNum": 1,     "css": [{top: -31, left: 8, rotate: 22, opacity: 0}], "tween": false},
-                        {"frameNum": 1 + 3, "css": [{top: -31, left: 8, rotate: 22, opacity: 1}], "tween": true, hideElement: "line_6_2"},
-                        {"frameNum": 1 + 6, "css": [{top: -72, left: 3, rotate: 57, opacity: 1}], "tween": true},
-                        {"frameNum": 1 + 12, "css": [{top: -111, left: 3, rotate: 80, opacity: 1}], "tween": true},
-                        {"frameNum": 1 + 16, "css": [{top: -90, left: 5, rotate: 85, opacity: 1}], "tween": true},
-                        {"frameNum": 1 + 20, "css": [{top: -15, left: 6, rotate: 87, opacity: 1}], "tween": true},
-                        {"frameNum": 1 + 24, "css": [{top: 95, left: 3, rotate: 91, opacity: 1}], "tween": true}
+                        {"frameNum": 1,      "css": [{top: -51, left: 18, rotate: 40, opacity: 0}], "tween": false},
+                        {"frameNum": 1 + 8, "css": [{top: -51, left: 18, rotate: 40, opacity: 1}], "tween": true},
+                        {"frameNum": 1 + 9, "css": [{top: -51, left: 41, rotate: 74, opacity: 1}], "tween": true}
                     ]
                 }, {
-                    "layer_id": "line_6_dished_falling",
+                    "layer_id": "line_2_dished_falling",
                     "keyframes": [
-                        {"frameNum": 1,     "css": [{top: -36, left: -3, rotate: 15, opacity: 0}], "tween": false},
-                        {"frameNum": 1 + 3, "css": [{top: -36, left:  -3, rotate: 15, opacity: 1}], "tween": true, hideElement: "line_6_dished_2"},
-                        {"frameNum": 1 + 6, "css": [{top: -84, left: 14, rotate: 8, opacity: 1}], "tween": true},
-                        {"frameNum": 1 + 12, "css": [{top: -109, left: 14, rotate: 40, opacity: 1}], "tween": true},
-                        {"frameNum": 1 + 16, "css": [{top: -90, left: 22, rotate: 35, opacity: 1}], "tween": true},
-                        {"frameNum": 1 + 20, "css": [{top: 5, left: 24, rotate: 31, opacity: 1}], "tween": true},
-                        {"frameNum": 1 + 24, "css": [{top: 133, left: 17, rotate: 6, opacity: 1}], "tween": true},
-                        {"frameNum": 1 + 28, "css": [{top: 133, left: 17, rotate: -8, opacity: 1}], "tween": true},
-                        {"frameNum": 1 + 32, "css": [{top: 133, left: 17, rotate: 8, opacity: 1}], "tween": true},
-                        {"frameNum": 1 + 36, "css": [{top: 133, left: 17, rotate: -8, opacity: 1}], "tween": true},
-                        {"frameNum": 1 + 40, "css": [{top: 133, left: 17, rotate: 8, opacity: 1}], "tween": true},
-                        {"frameNum": 1 + 44, "css": [{top: 133, left: 17, rotate: -8, opacity: 1}], "tween": true},
-                        {"frameNum": 1 + 48, "css": [{top: 133, left: 17, rotate: 0, opacity: 1}], "tween": true}
+                        {"frameNum": 1,      "css": [{top: -55, left: 11, rotate: 30, opacity: 0}], "tween": false},
+                        {"frameNum": 1 + 8, "css": [{top: -55, left: 11, rotate: 30, opacity: 1}], "tween": true},
+                        {"frameNum": 1 + 9, "css": [{top: -32, left: 57, rotate: 106, opacity: 1}], "tween": true}
                     ]
                 },
 
@@ -1078,33 +1053,23 @@ var incorrectScene = {
                 {
                     "layer_id": "joker_hand_left_center_p",
                     "keyframes": [
-                        {"frameNum": 1, "css": [{rotate: -40}], "tween": true},
-                        {"frameNum": 1 + 3, "css": [{rotate: -23}], "tween": true},
-                        {"frameNum": 1 + 4, "css": [{rotate: -7}], "tween": true},
-                        {"frameNum": 1 + 12, "css": [{rotate: -20}], "tween": true},
-                        {"frameNum": 1 + 16, "css": [{rotate: -30}], "tween": true},
-                        {"frameNum": 1 + 20, "css": [{rotate: -35}], "tween": true},
-                        {"frameNum": 1 + 24, "css": [{rotate: -30}], "tween": true, action: "goToFrame", goToFrame: 1 + 16}
+                        {"frameNum": 1, "css": [{rotate: -30}], "tween": true},
+                        {"frameNum": 1 + 8, "css": [{rotate: 0}], "tween": true}
 
                     ]
                 },
                 {
                     "layer_id": "joker_elbow_left_center_p",
                     "keyframes": [
-                        {"frameNum": 1, "css": [{rotate: 26}], "tween": true},
-                        {"frameNum": 1 + 4, "css": [{rotate: 9}], "tween": true},
-                        {"frameNum": 1 + 12, "css": [{rotate: 23}], "tween": true},
-                        {"frameNum": 1 + 16, "css": [{rotate: 15}], "tween": true},
-                        {"frameNum": 1 + 20, "css": [{rotate: 23}], "tween": true},
-                        {"frameNum": 1 + 24, "css": [{rotate: 15}], "tween": true, action: "goToFrame", goToFrame: 1 + 16}
+                        {"frameNum": 1, "css": [{rotate: 15}], "tween": true},
+                        {"frameNum": 1 + 8, "css": [{rotate: 58}], "tween": true}
                     ]
                 },
                 {
                     "layer_id": "joker_forearm_left_center_p",
                     "keyframes": [
-                        {"frameNum": 1, "css": [{rotate: 16}], "tween": true},
-                        {"frameNum": 1 + 4, "css": [{rotate: 16}], "tween": true},
-                        {"frameNum": 1 + 12, "css": [{rotate: 3}], "tween": true}
+                        {"frameNum": 1, "css": [{rotate: 3}], "tween": true},
+                        {"frameNum": 1 + 8, "css": [{rotate: -7}], "tween": true}
 
                     ]
                 },
@@ -1112,24 +1077,13 @@ var incorrectScene = {
                 {
                     "layer_id": "left_leg_center_p",
                     "keyframes": [
-                        {"frameNum": 1, "css": [{top: 148, left: 124, rotate: 58}], "tween": true},
-                        {"frameNum": 1 + 3, "css": [{top: 144, left: 112, rotate: 94}], "tween": true},
-                        {"frameNum": 1 + 4, "css": [{top: 144, left: 112, rotate: 120}], "tween": true},
-                        {"frameNum": 1 + 12, "css": [{top: 144, left: 112, rotate: 110}], "tween": true},
-                        {"frameNum": 1 + 16, "css": [{top: 144, left: 112, rotate: 100}], "tween": true},
-                        {"frameNum": 1 + 20, "css": [{top: 144, left: 112, rotate: 106}], "tween": true},
-                        {"frameNum": 1 + 24, "css": [{top: 144, left: 112, rotate: 100}], "tween": true, action: "goToFrame", goToFrame: 1 + 16}
+                        {"frameNum": 1, "css": [{top: 144, left: 112, rotate: 100}], "tween": true},
+                        {"frameNum": 1 + 8, "css": [{top: 162, left: 133, rotate: 122}], "tween": true}
                     ]
                 }, {
                     "layer_id": "left_shoe_center_p",
                     "keyframes": [
-                        {"frameNum": 1, "css": [{rotate: -12}], "tween": true},
-                        {"frameNum": 1 + 3, "css": [{rotate: -6}], "tween": true},
-                        {"frameNum": 1 + 4, "css": [{rotate: -30}], "tween": true},
-                        {"frameNum": 1 + 12, "css": [{rotate: -30}], "tween": true},
-                        {"frameNum": 1 + 16, "css": [{rotate: -8}], "tween": true},
-                        {"frameNum": 1 + 20, "css": [{rotate: -20}], "tween": true},
-                        {"frameNum": 1 + 24, "css": [{rotate: -8}], "tween": true, action: "goToFrame", goToFrame: 1 + 16}
+                        {"frameNum": 1, "css": [{rotate: -8}], "tween": true}
                     ]
                 },
 
@@ -1138,31 +1092,22 @@ var incorrectScene = {
                 {
                     "layer_id": "joker_hand_right_center_p",
                     "keyframes": [
-                        {"frameNum": 1, "css": [{rotate: -60}], "tween": true},
-                        {"frameNum": 1 + 3, "css": [{rotate: 5}], "tween": true},
-                        {"frameNum": 1 + 4, "css": [{rotate: -1}], "tween": true},
-                        {"frameNum": 1 + 12, "css": [{rotate: 18}], "tween": true},
-                        {"frameNum": 1 + 16, "css": [{rotate: 18}], "tween": true},
-                        {"frameNum": 1 + 20, "css": [{rotate: 14}], "tween": true},
-                        {"frameNum": 1 + 24, "css": [{rotate: 18}], "tween": true, action: "goToFrame", goToFrame: 1 + 16}
+                        {"frameNum": 1, "css": [{rotate: 18}], "tween": true},
+                        {"frameNum": 1 + 8, "css": [{rotate: 17}], "tween": true}
                     ]
                 },
 
                 {
                     "layer_id": "joker_elbow_right_center_p",
                     "keyframes": [
-                        {"frameNum": 1, "css": [{rotate: 7}], "tween": true},
-                        {"frameNum": 1 + 3, "css": [{rotate: -47}], "tween": true},
-                        {"frameNum": 1 + 4, "css": [{rotate: -40}], "tween": true},
-                        {"frameNum": 1 + 12, "css": [{rotate: -57}], "tween": true}
+                        {"frameNum": 1, "css": [{rotate: -57}], "tween": true},
+                        {"frameNum": 1 + 8, "css": [{rotate: -57}], "tween": true}
 
                     ]
                 }, {
                     "layer_id": "joker_forearm_right_center_p",
                     "keyframes": [
-                        {"frameNum": 1, "css": [{rotate: 32}], "tween": true},
-                        {"frameNum": 1 + 4, "css": [{rotate: 19}], "tween": true},
-                        {"frameNum": 1 + 12, "css": [{rotate: 19}], "tween": true}
+                        {"frameNum": 1, "css": [{rotate: 19}], "tween": true}
                     ]
                 },
 
@@ -1172,12 +1117,8 @@ var incorrectScene = {
                 {
                     "layer_id": "right_foot_center_p",
                     "keyframes": [
-                        {"frameNum": 1, "css": [{rotate: 42}], "tween": true},
-                        {"frameNum": 1 + 4, "css": [{rotate: 38}], "tween": true},
-                        {"frameNum": 1 + 12, "css": [{rotate: 36}], "tween": true},
-                        {"frameNum": 1 + 16, "css": [{rotate: 34}], "tween": true},
-                        {"frameNum": 1 + 20, "css": [{rotate: 31}], "tween": true},
-                        {"frameNum": 1 + 24, "css": [{rotate: 34}], "tween": true, action: "goToFrame", goToFrame: 1 + 16}
+                        {"frameNum": 1, "css": [{rotate: 34}], "tween": true},
+                        {"frameNum": 1 + 8, "css": [{rotate: 56}], "tween": true}
                     ]
                 },
 
@@ -1193,21 +1134,19 @@ var incorrectScene = {
                 {
                     "layer_id": "line_group_2_center_p",
                     "keyframes": [
-                        {"frameNum": 1, "css": [{rotate: -24}], "tween": true}
+                        {"frameNum": 1, "css": [{rotate: -24}], "tween": true},
+                        {"frameNum": 1 + 30, "css": [{rotate: -39}], "tween": true}
                     ]
                 }, {
                     "layer_id": "line_group_3_center_p",
                     "keyframes": [
-                        {"frameNum": 1, "css": [{rotate: -10}], "tween": true},
-                        {"frameNum": 1 + 4, "css": [{rotate: -10}], "tween": true},
-                        {"frameNum": 1 + 12, "css": [{rotate: 10}], "tween": true},
-                        {"frameNum": 1 + 16, "css": [{rotate: 15}], "tween": true}
+                        {"frameNum": 1, "css": [{rotate: 15}], "tween": true},
+                        {"frameNum": 1, "css": [{rotate: 1}], "tween": true}
                     ]
                 }, {
                     "layer_id": "line_group_4_center_p",
                     "keyframes": [
-                        {"frameNum": 1, "css": [{rotate: 15}], "tween": true},
-                        {"frameNum": 1 + 4, "css": [{rotate: 18}], "tween": true}
+                        {"frameNum": 1, "css": [{rotate: 18}], "tween": true}
                     ]
                 }, {
                     "layer_id": "line_group_5_center_p",
@@ -1250,7 +1189,7 @@ var incorrectScene = {
 
 
 
-                spinning_plate_2, spinning_plate_3, spinning_plate_4, spinning_plate_5
+                spinning_plate_3, spinning_plate_4, spinning_plate_5
 
             ]
         } ,
