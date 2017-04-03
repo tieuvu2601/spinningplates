@@ -23,8 +23,6 @@
 <div id="animStage">
     <div id="background"><img src="images/background/background.png" width="408" height="274"></div>
 
-
-
     <div id="clapping">
         <div id="clapping_1"><img src="images/claps/clapping_1.png" width="75" height="35"></div>
         <div id="clapping_2"><img src="images/claps/clapping_2.png" width="83" height="26"></div>
@@ -33,9 +31,6 @@
     </div>
 
     <div id="joker" class="center_point">
-        <div id="background-joker" style="opacity: 0.1"><img src="images/background/template%20using_2.png" width="182" height="221"></div>
-
-
         <div id="left_leg_center_p" class="center_point">
             <div id="left_shoe_center_p"  class="center_point">
                 <div id="left_foot"><img src="images/legs/shoe_l.png" width="52" height="23"></div>
@@ -91,10 +86,15 @@
                             </div>
                         </div>
 
-                        <div id="hand_close_left"><img src="images/arm/hand_l_close.png" width="19" height="21"></div>
+                        <div id="hand_close_left">
+                            <img src="images/arm/hand_l_close.png" width="19" height="21">
+                        </div>
+
+                        <div id="hand_open_left">
+                            <img src="images/arm/hand_l_open.png" width="27" height="24">
+                        </div>
                     </div>
                 </div>
-
                 <div id="upper_arm_left"><img src="images/arm/upper_arm_l.png" width="36" height="21"></div>
             </div>
 
@@ -122,6 +122,7 @@
                         </div>
 
                         <div id="hand_close_right"><img src="images/arm/hand_r_close.png" width="19" height="21"></div>
+                        <div id="hand_open_right"><img src="images/arm/hand_r_open.png" width="26" height="25"></div>
                     </div>
                 </div>
 
@@ -140,6 +141,9 @@
                 <div id="joker_head_1"><img src="images/head/head_1.png" width="96" height="72"></div>
                 <div id="joker_head_2"><img src="images/head/head_2.png" width="96" height="71"></div>
                 <div id="joker_head_3"><img src="images/head/head_3.png" width="98" height="63"></div>
+                <div id="joker_head_4"><img src="images/head/head_4.png" width="93" height="79"></div>
+                <div id="joker_head_5"><img src="images/head/head_5.png" width="97" height="64"></div>
+                <div id="joker_head_6"><img src="images/head/head_6.png" width="97" height="65"></div>
 
 
                 <div id="line_group_3_center_p" class="center_point">
@@ -184,6 +188,46 @@
             </div>
         </div>
 
+
+        <div id="line_group_3_falling_center_p" class="center_point">
+            <div id="line_3_falling">
+                <img src="images/lines/line_3.png" width="3" height="83">
+            </div>
+
+            <div id="line_3_dished_falling" class="dished_class">
+                <img src="images/lines/plate_1.png" width="40" height="10">
+            </div>
+        </div>
+
+        <div id="line_group_5_falling_center_p" class="center_point">
+            <div id="line_5_falling">
+                <img src="images/lines/line_5.png" width="4" height="84">
+            </div>
+
+            <div id="line_5_dished_falling" class="dished_class">
+                <img src="images/lines/plate_1.png" width="40" height="10">
+            </div>
+        </div>
+    </div>
+
+    <div id="bird"  class="center_point">
+        <div id="bird_moving_left"  class="center_point">
+            <div id="bird_1_l"><img src="images/birds/left_bird_1.png" width="33" height="28"/></div>
+            <div id="bird_2_l"><img src="images/birds/left_bird_2.png" width="33" height="29"/></div>
+            <div id="bird_3_l"><img src="images/birds/left_bird_3.png" width="33" height="25"/></div>
+            <div id="bird_4_l"><img src="images/birds/left_bird_4.png" width="28" height="25"/></div>
+        </div>
+
+        <div id="bird_moving_right"  class="center_point">
+            <div id="bird_1_r"><img src="images/birds/right_bird_1.png" width="33" height="28"/></div>
+            <div id="bird_2_r"><img src="images/birds/right_bird_2.png" width="33" height="29"/></div>
+            <div id="bird_3_r"><img src="images/birds/right_bird_3.png" width="33" height="25"/></div>
+            <div id="bird_4_r"><img src="images/birds/right_bird_4.png" width="28" height="25"/></div>
+        </div>
+
+        <div id="bird_standing" class="center_point">
+            <div id="bird_standing_img"><img src="images/birds/bird_standing.png" width="34" height="27"/></div>
+        </div>
     </div>
 
 
@@ -206,8 +250,13 @@
 <script>
     var SadlierAnimation;
     window.onload = function () {
+        var _audioVolume = 1; //parent.getCurrentAudioVolume();
+
         SadlierAnimation = new sadlierAnimationController();
-        SadlierAnimation.init();
+        SadlierAnimation.init(_audioVolume);
+
+//        parent.setAnimReference(SadlierAnimation);
+
 
 
 

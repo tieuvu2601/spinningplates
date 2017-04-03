@@ -1,3 +1,8 @@
+function getCurrentAudioForHangMan (){
+    return window.parent.getCurrentAudioVolume();
+}
+
+
 function SceneController(_scene) {
 
 
@@ -27,11 +32,8 @@ function SceneController(_scene) {
         var currentTimeLine =  self._arrTimelineLayersStack[self._arrTimelineLayersStackIndex];
 
         if(currentTimeLine != null && currentTimeLine != undefined){
-            console.dir(currentTimeLine);
-
             var tm = new Timeline(currentTimeLine, Number(currentTimeLine.fps), currentTimeLine.id);
             tm.init();
-
             self._arrTimelineLayers[currentTimeLine.id] = tm;
 
             tm.onstateChange = function () {

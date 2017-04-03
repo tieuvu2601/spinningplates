@@ -85,26 +85,29 @@ function Animator(_obj, fps, currentFrame, totalframe) {
                 }
             }
 
-            if (cKeyFrame.action == "stop") {
-                this.state = "stop";
-                this.stop();
 
-                this.broadcastMessage('onAnimStop', {target: this, type: 'onAnimStop', frameNo: cKeyFrame.frameNum});
-            } else if (cKeyFrame.hideElement) {
+            if (cKeyFrame.hideElement) {
                 this.broadcastMessage('hideElement', {
                     target: this,
                     type: 'hideElement',
                     element: cKeyFrame.hideElement
                 });
+            }
 
-            } else if (cKeyFrame.showElement) {
+            if (cKeyFrame.showElement) {
                 this.broadcastMessage('showElement', {
                     target: this,
                     type: 'showElement',
                     element: cKeyFrame.showElement
                 });
+            }
 
-            } else  if (cKeyFrame.action == "ownLoop") {
+            if (cKeyFrame.action == "stop") {
+                this.state = "stop";
+                this.stop();
+
+                this.broadcastMessage('onAnimStop', {target: this, type: 'onAnimStop', frameNo: cKeyFrame.frameNum});
+            } else if (cKeyFrame.action == "ownLoop") {
                 this._loopByFrame = this._currentFrame;
 
             } else if(cKeyFrame.action == "goToFrame" && cKeyFrame.goToFrame != null){

@@ -1,11 +1,23 @@
-﻿function sadlierAnimationController (){
+﻿function getCurrentAudioForHangMan (){
+    return 1;
+
+//    return window.parent.getCurrentAudioVolume();
+}
+
+
+function sadlierAnimationController (){
+    var audioVolume = 1;
+
     var backgroundAnimationObj;
     var correctAnimationObj;
     var incorrectAnimationObj;
     var winnerAnimationObj;
     var me = this;
 
-    this.init = function(){
+    this.init = function(_audioVolume){
+        audioVolume = _audioVolume;
+
+
         backgroundAnimationObj = new SceneController(backgroundScene);
         correctAnimationObj = new SceneController(correctScene);
         incorrectAnimationObj = new SceneController(incorrectScene);
@@ -16,6 +28,8 @@
 
         backgroundAnimationObj.playScene();
         incorrectAnimationObj.playScene();
+
+        me.changeAudioVolume(audioVolume);
     }
 
 
@@ -32,20 +46,21 @@
     }
 
     this.goodJobMessage = function (){
-//        backgroundAnimationObj.stopAll();
-//        incorrectAnimationObj.stopAll();
-//        correctAnimationObj.stopAll();
-
-//        backgroundAnimationObj.stop("ground");
 
 
-        winnerAnimationObj = new AnimController(winnerTimeline);
-        winnerAnimationObj.init();
-        winnerAnimationObj.play("winner");
+//        winnerAnimationObj = new AnimController(winnerTimeline);
+//        winnerAnimationObj.init();
+//        winnerAnimationObj.play("winner");
     }
 
     this.losingMessage = function (){
         // show losing message
+    }
+
+    this.changeAudioVolume = function(percent){
+        $('audio').each(function(index, audio){
+            audio.volume = percent;
+        });
     }
 
     this.reset = function (){

@@ -29,8 +29,8 @@
 /*INIT STATE */
 
 #joker {
-    top: 38px;
-    left: 120px;
+    top: 40px;
+    left: 115px;
 }
 
 
@@ -39,7 +39,7 @@
     width: 3px;
     height: 3px;
     border-radius: 100%;
-    background: green;
+    /*background: green;*/
 
     /*z-index: 999999;*/
 
@@ -114,6 +114,32 @@ div[id^="line_group_"] {
     left: -44px;
 }
 
+#joker_head_4 {
+    top: -77px;
+    left: -45px;
+}
+
+#joker_head_5 {
+    top: -61px;
+    left: -55px;
+
+    transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -webkit-transform-origin: 50% 100%;
+
+    transform: rotate(11deg);
+}
+
+#joker_head_6 {
+    top: -62px;
+    left: -52px;
+
+    transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -webkit-transform-origin: 50% 100%;
+    transform: rotate(7deg);
+}
+
 
 
 
@@ -169,6 +195,11 @@ div[id^="line_group_"] {
     left: -14px;
 }
 
+#hand_open_left {
+    top: -12px;
+    left: -19px;
+}
+
 #line_group_2_center_p {
     top: -6px;
     left: -9px;
@@ -178,6 +209,23 @@ div[id^="line_group_"] {
 #line_group_2_falling_center_p {
     top: 72px;
     left: 126px;
+}
+
+#line_group_3_falling_center_p {
+    top: 62px;
+    left: 31px;
+}
+
+#line_group_5_falling_center_p {
+    top: 48px;
+    left: 128px;
+}
+
+
+
+#bird {
+    top: 85px;
+    left: -16px;
 }
 
 
@@ -197,6 +245,8 @@ div[id^="line_group_"] {
 
     /*transform: rotate(0deg);*/
 }
+
+
 
 #line_1{
     top: -34px;
@@ -218,6 +268,7 @@ div[id^="line_group_"] {
     -webkit-transform-origin: 0% 100%;
 }
 
+
 #line_2 {
     top: -60px;
     left: 0px;
@@ -233,6 +284,13 @@ div[id^="line_group_"] {
     top: -82px;
     left: 0px;
     transform: rotate(12deg);
+}
+
+#line_3_falling,
+#line_5_falling{
+    transform-origin: 0% 100%;
+    -ms-transform-origin: 0% 100%;
+    -webkit-transform-origin: 0% 100%;
 }
 
 #line_4 {
@@ -273,7 +331,6 @@ div[id^="line_group_"] {
     -ms-transform-origin: 50% 250%;
     -webkit-transform-origin: 50% 250%;
 }
-
 
 
 #line_4_dished{
@@ -339,6 +396,12 @@ div[id^="line_group_"] {
     left: -3px;
 }
 
+#hand_open_right {
+    top: -12px;
+    left: -2px;
+}
+
+
 
 
 
@@ -395,6 +458,8 @@ div[id^="line_group_"] {
 
 
 
+
+
 #right_leg_center_p {
     /*top: 151px;*/
     top: 149px;
@@ -416,6 +481,39 @@ div[id^="line_group_"] {
 #right_foot {
     top: 51px;
     left: 0px;
+}
+
+
+#bird_3_l{
+    top: 2px;
+    left: 2px;
+}
+
+div#bird_4_l {
+    top: 3px;
+    left: 0px;
+}
+
+
+
+#clapping_1 {
+    top: 33px;
+    left: 20px;
+}
+
+#clapping_2 {
+    top: 33px;
+    left: 300px;
+}
+
+#clapping_3 {
+    top: 107px;
+    left: 20px;
+}
+
+#clapping_4 {
+    top: 82px;
+    left: 306px;
 }
 
 

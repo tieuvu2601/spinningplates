@@ -41,6 +41,7 @@ function Timeline(timeline, fps, id) {
                             var delayTime = this._audioRef[i].delayTime;
 
                             setTimeout(function(){
+                                audioObject.volume = getCurrentAudioForHangMan();
                                 audioObject.play()
                             }, delayTime);
                         }
@@ -241,7 +242,7 @@ function Timeline(timeline, fps, id) {
         var delayTime = audioData.delayTime;
 
         setTimeout(function() {
-
+            audioObject.volume = getCurrentAudioForHangMan();
             audioObject.play();
         }, delayTime);
     }
