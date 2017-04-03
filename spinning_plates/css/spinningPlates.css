@@ -115,8 +115,14 @@ div[id^="line_group_"] {
 }
 
 #joker_head_4 {
-    top: -77px;
-    left: -45px;
+    top: -74px;
+    left: -50px;
+
+    transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -webkit-transform-origin: 50% 100%;
+
+    transform: rotate(11deg);
 }
 
 #joker_head_5 {
